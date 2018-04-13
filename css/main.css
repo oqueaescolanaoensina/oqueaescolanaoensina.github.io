@@ -1533,19 +1533,6 @@ color: #1a1a1a
 color: #1a1a1a
 }
 
-.header-inner {
-padding: 20px 0;
-display: block;
-padding-top: 20px;
-display: table;
-width: 100%;
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
--webkit-animation: header-anim 1s ease-in-out;
-animation: header-anim 1s ease-in-out;
-}
-
 .header-inner,
 .footer-inner,
 .pre-footer-inner {
@@ -1595,6 +1582,18 @@ box-sizing: border-box
 }
 
 
+.header-inner{
+padding: 20px 0;
+display: block;
+padding-top: 20px;
+display: table;
+width: 100%;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-animation: header-anim 1s ease-in-out;
+animation: header-anim 1s ease-in-out;
+}
 
 .footer-inner {
 padding: 64px 32px
@@ -1725,10 +1724,7 @@ z-index: 1000
 #header #headerNav {
 text-align: right
 }
-#header #logoWrapper,
-#header #logoImage {
-width: 240px
-}
+
 #header #siteTitleWrapper,
 #header #siteTitle {
 width: 220px
@@ -1739,7 +1735,7 @@ width: 220px
 border: 1px solid #14aaff
 }
 }
-*/
+
 #logoImage {
 margin: 0;
 font-size: 0;
@@ -1747,12 +1743,12 @@ max-width: 100%
 }
 
 #logoImage a {
-display: block
+text-align: center
 }
 
 #logoImage img {
 height: auto;
-max-height: 100px;
+max-height: 120px;
 width: auto;
 max-width: 100%
 }
@@ -1771,6 +1767,11 @@ margin: 0;
 padding-top: 0;
 padding-bottom: 0;
 line-height: 1em
+}
+
+a.plinks{
+color: #3d9991;
+text-decoration: none
 }
 
 .hide-page-sidebar #folderNav {
@@ -1808,14 +1809,14 @@ text-align: center
 
 #promotedGalleryWrapper,
 .promoted-gallery-wrapper,
-.banner-thumbnail-wrapper,
+.banner-wrapper,
 .sqs-featured-posts-gallery {
 background-color: #000;
 -moz-osx-font-smoothing: grayscale;
 -webkit-font-smoothing: antialiased
 }
 
-.banner-thumbnail-wrapper .color-overlay{
+.banner-wrapper .color-overlay{
 position: absolute;
 top: 0;
 right: 0;
@@ -1825,7 +1826,7 @@ background-color: rgba(0, 0, 0, .3);
 z-index: 99
 }
 
-#thumbnail {
+#banner {
 position: absolute;
 top: 0;
 left: 0;
@@ -1833,7 +1834,6 @@ bottom: 0;
 right: 0;
 -webkit-animation: feature-bg-anim .6s ease-in-out;
 animation: feature-bg-anim .6s ease-in-out;
-background-image: url(../images/header-banner-home.jpeg);
 background-size: cover;
 background-position: center
 }
@@ -1841,27 +1841,27 @@ background-position: center
 background-color: #000
 }
 
-.banner-thumbnail-wrapper {
+.banner-wrapper {
 position: relative;
 overflow: hidden;
 min-height: 320px;
 width: 100%
 }
 
-.view-list .banner-thumbnail-wrapper,
-.collection-type-page .banner-thumbnail-wrapper,
-.collection-type-index .banner-thumbnail-wrapper {
+.view-list .banner-wrapper,
+.collection-type-page .banner-wrapper,
+.collection-type-index .banner-wrapper {
 min-height: 0;
 padding: 130px 0
 }
 
-.transparent-header.view-list .banner-thumbnail-wrapper,
-.transparent-header.collection-type-page .banner-thumbnail-wrapper {
+.transparent-header.view-list .banner-wrapper,
+.transparent-header.collection-type-page .banner-wrapper {
 padding: 180px 0 155px
 }
 
-.collection-type-index.transparent-header.view-list .index-section:not(:first-of-type) .banner-thumbnail-wrapper,
-.collection-type-index.transparent-header.collection-type-page .index-section:not(:first-of-type) .banner-thumbnail-wrapper {
+.collection-type-index.transparent-header.view-list .index-section:not(:first-of-type) .banner-wrapper,
+.collection-type-index.transparent-header.collection-type-page .index-section:not(:first-of-type) .banner-wrapper {
 padding: 130px 0
 }
 
@@ -2252,9 +2252,9 @@ content: '\00B7';
 padding: 0 .5em
 }
 
-.view-list .banner-thumbnail-wrapper:not(.has-description),
-.collection-type-page .banner-thumbnail-wrapper:not(.has-description),
-.collection-type-blog.view-item .banner-thumbnail-wrapper:not(.has-description) {
+.view-list .banner-wrapper:not(.has-description),
+.collection-type-page .banner-wrapper:not(.has-description),
+.collection-type-blog.view-item .banner-wrapper:not(.has-description) {
 min-height: 80px
 }
 
@@ -2382,7 +2382,8 @@ margin: 5px auto
 }
 
 #logoWrapper {
-width: 140px
+width: 100%;
+margin-left: 0;
 }
 
 #secondaryNavWrapper .folder-toggle~.subnav {
