@@ -1072,67 +1072,6 @@ body:not(.button-style-default).button-corner-style-pill .sqs-editable-button-sh
 border-radius: 300px
 }
 
-body:not(.button-style-default).button-style-outline .newsletter-block .newsletter-form-button {
-border-width: 1px;
--webkit-box-shadow: inset 0px 0px 0px 1px #4d4d4d;
--moz-box-shadow: inset 0px 0px 0px 1px #4d4d4d;
-box-shadow: inset 0px 0px 0px 1px #4d4d4d;
-background: transparent;
-color: #4d4d4d
-}
-
-body:not(.button-style-default).button-style-outline .newsletter-block .newsletter-form-button:hover {
-background-color: #4d4d4d;
-color: #fff
-}
-
-body:not(.button-style-default).button-style-outline .sqs-alternate-block-style-container .newsletter-block .newsletter-form-button {
--webkit-box-shadow: inset 0px 0px 0px 1px #272727;
--moz-box-shadow: inset 0px 0px 0px 1px #272727;
-box-shadow: inset 0px 0px 0px 1px #272727;
-color: #272727
-}
-
-body:not(.button-style-default).button-style-outline .sqs-alternate-block-style-container .newsletter-block .newsletter-form-button:hover {
-background-color: #272727;
-color: #fff
-}
-
-body:not(.button-style-default).button-style-raised .newsletter-block .newsletter-form-button {
-border-width: 0 !important;
-top: -1px;
--webkit-box-shadow: 0 2px 0 0 #393939;
--moz-box-shadow: 0 2px 0 0 #393939;
-box-shadow: 0 2px 0 0 #393939
-}
-
-body:not(.button-style-default).button-style-raised .newsletter-block .newsletter-form-button:hover {
-background-color: #555
-}
-
-body:not(.button-style-default).button-style-raised .newsletter-block .newsletter-form-button:active {
-top: 0px;
--webkit-box-shadow: 0 1px 0 0 #393939;
--moz-box-shadow: 0 1px 0 0 #393939;
-box-shadow: 0 1px 0 0 #393939
-}
-
-body:not(.button-style-default).button-style-raised .sqs-alternate-block-style-container .newsletter-block .newsletter-form-button {
--webkit-box-shadow: 0 2px 0 0 #131313;
--moz-box-shadow: 0 2px 0 0 #131313;
-box-shadow: 0 2px 0 0 #131313
-}
-
-body:not(.button-style-default).button-style-raised .sqs-alternate-block-style-container .newsletter-block .newsletter-form-button:hover {
-background-color: #2f2f2f
-}
-
-body:not(.button-style-default).button-style-raised .sqs-alternate-block-style-container .newsletter-block .newsletter-form-button:active {
--webkit-box-shadow: 0 1px 0 0 #131313;
--moz-box-shadow: 0 1px 0 0 #131313;
-box-shadow: 0 1px 0 0 #131313
-}
-
 body:not(.button-style-default) .opentable-block .OT_Find_a_Table {
 font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 font-weight: 600;
@@ -1150,91 +1089,6 @@ border-radius: 3px
 
 body:not(.button-style-default).button-corner-style-pill .opentable-block .OT_Find_a_Table {
 border-radius: 300px
-}
-
-body:not(.button-style-default) #productDetails .ProductItem-view-cart a,
-body:not(.button-style-default) .productDetails .ProductItem-view-cart a {
-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-font-weight: 600;
-letter-spacing: 1px;
-font-family: "proxima-nova";
-text-transform: uppercase;
-letter-spacing: 3px;
-font-weight: 300;
-font-style: normal;
-display: block !important;
-border: none !important
-}
-
-body:not(.button-style-default) #productDetails .ProductItem-view-cart a,
-body:not(.button-style-default) .productDetails .ProductItem-view-cart a {
-color: #fff !important;
-background-color: rgba(26, 26, 26, .1) !important;
-color: #1a1a1a !important
-}
-
-body:not(.button-style-default) #productDetails .ProductItem-view-cart a:hover,
-body:not(.button-style-default) .productDetails .ProductItem-view-cart a:hover {
-opacity: .8
-}
-
-body:not(.button-style-default) #productDetails .ProductItem-view-cart,
-body:not(.button-style-default) .productDetails .ProductItem-view-cart {
-display: block !important;
-opacity: 0;
-max-height: 0;
-transition: opacity .5s ease-out, max-height .5s ease-out, margin .25s ease-out
-}
-
-body:not(.button-style-default) #productDetails .cart-added+.ProductItem-view-cart,
-body:not(.button-style-default) .productDetails .cart-added+.ProductItem-view-cart {
-margin-top: 10px;
-opacity: 1;
-max-height: 200px
-}
-
-body:not(.button-style-default) .sqs-alternate-block-style-container .ProductItem-view-cart a {
-color: #fff !important;
-background-color: rgba(39, 39, 39, .1) !important;
-color: #272727 !important
-}
-
-body:not(.button-style-default).button-corner-style-rounded #productDetails .ProductItem-view-cart a,
-body:not(.button-style-default).button-corner-style-rounded .productDetails .ProductItem-view-cart a {
-border-radius: 3px
-}
-
-body:not(.button-style-default).button-corner-style-pill #productDetails .ProductItem-view-cart a,
-body:not(.button-style-default).button-corner-style-pill .productDetails .ProductItem-view-cart a {
-border-radius: 300px
-}
-
-body:not(.tweak-product-quick-view-lightbox-show-arrows) .sqs-product-quick-view-lightbox-next-button {
-opacity: 0
-}
-
-.sqs-product-quick-view-lightbox-prev-button {
-margin-left: -35px
-}
-
-body:not(.tweak-product-quick-view-lightbox-show-arrows) .sqs-product-quick-view-lightbox-prev-button {
-opacity: 0
-}
-
-.sqs-product-quick-view-lightbox-close-button {
-top: 25px;
-right: 12.5px;
-width: 25px;
-z-index: 100000000
-}
-
-.sqs-product-quick-view-lightbox-close-button svg {
-width: 20px;
-height: 20px
-}
-
-body:not(.tweak-product-quick-view-lightbox-show-close-button) .sqs-product-quick-view-lightbox-close-button {
-opacity: 0
 }
 
 html:not(.js) body[class^=collection-] img {
@@ -2257,6 +2111,42 @@ padding: 0 .5em
 .collection-type-blog.view-item .banner-wrapper:not(.has-description) {
 min-height: 80px
 }
+.bookmark-wrapper{
+    display: block;
+    z-index: 10000;
+    position: relative;
+    width: 100%;
+    max-width: 1084px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 32px;
+    text-align: center;
+	text-rendering: optimizeLegibility;
+	color:#fff
+}
+.bookmark-wrapper .post-date,
+.bookmark-wrapper .post-link a{
+		font-size: 24px;
+		font-weight: 400;
+		margin-bottom: .75em;
+		font-family: "adobe-garamond-pro";
+		font-style: italic;
+			color: #fff;
+
+}
+.bookmark-wrapper .post-title a{
+	color: #fff;
+	font-family: "proxima-nova";
+	font-weight: 700;
+	    font-style: normal;
+	text-transform: uppercase;
+    line-height: 1em;
+	font-size: 68px;
+	padding: 4px;
+}
+/*media styles*/
 
 @media only screen and (max-width:767px) {
 #page {
@@ -2309,6 +2199,25 @@ padding: .75em 1em
 }
 
 @media only screen and (max-width:640px) {
+#mainNavWrapper {margin-top:20px; text-align: center}
+body:not(.force-mobile-nav) .nav-wrapper nav>div {
+display: block
+}
+.desc-wrapper{margin-top: 80px}
+.bookmark-wrapper{margin-top: 120px}
+.transparent-header.collection-type-page .banner-wrapper {
+padding: 180px 0 55px
+}
+#logoWrapper, #siteTitleWrapper {
+    display: block;
+    vertical-align: middle;
+    max-width: 196px;
+	padding: 0;
+	margin: 0 auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 .sqs-layout [class*=sqs-col] {
 float: none !important;
 width: auto !important
@@ -2382,8 +2291,7 @@ margin: 5px auto
 }
 
 #logoWrapper {
-width: 100%;
-margin-left: 0;
+max-width: 196px;
 }
 
 #secondaryNavWrapper .folder-toggle~.subnav {
@@ -2397,5 +2305,9 @@ font-size: 13px
 .footer-inner .back-to-top {
 text-align: center;
 margin: 24px 0
+}
+.bookmark-wrapper .post-title a {
+font-size: 30px;
+letter-spacing: 2px
 }
 }/*end @media*/
