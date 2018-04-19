@@ -2203,6 +2203,8 @@ padding: .75em 1em
 body:not(.force-mobile-nav) .nav-wrapper nav>div {
 display: block
 }
+.nav-button-style-outline.enable-nav-button #headerNav nav>div:not(.folder):last-child a{border: none}
+.nav-button-style-outline.enable-nav-button #headerNav nav>div:not(.folder):last-child a:hover{background-color:transparent;color: #fff}
 .desc-wrapper{margin-top: 80px}
 .bookmark-wrapper{margin-top: 120px}
 .transparent-header.collection-type-page .banner-wrapper {
